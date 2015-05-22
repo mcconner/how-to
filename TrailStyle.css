@@ -1,0 +1,105 @@
+body {
+	padding-left : 13em;
+	padding-right: 5em;
+}
+
+hr {
+   display: block;
+   position: relative;
+   padding: 0;
+   margin: 8px auto;
+   height: 0;
+   width: 100%;
+   max-height: 0;
+   font-size: 1px;
+   line-height: 0;
+   clear: both;
+   border: none;
+   border-top: 2px solid #aaaaaa;
+   border-bottom: 2px solid #ffffff;
+}
+
+td.left {
+	text-align: left;
+}
+
+td.right {
+	text-align: right;
+}
+
+p.output {
+	background-color: #d3d3d3;
+	border: solid 1px;
+	padding: 0.1em;
+	font-family: "Courier";
+	font-size: 12px;
+}
+
+
+/* http://www.w3.org/Style/Examples/011/firstcss.en.html*/
+ul.vnavbar {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 5em;
+	left: 3em;
+	width: 9em;
+}
+
+ul.vnavbar li {
+	margin: 0.5em 0;
+	padding: 0.1em;
+}
+
+ul.vnavbar a {
+	text-decoration: none;
+}
+
+
+h1 {
+	text-align: center;
+}
+
+div h3 {
+	color: #003200;
+}
+
+ul.hnavbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+}
+
+ul.hnavbar li {
+	float: left;
+	padding: 0.5em;
+	display: inline;
+}
+
+a.test:link, a.test:visited {
+	display: inline;
+	text-decoration: underline;
+	font-family: "Arial", Helvetica, sans-serif;
+    font-size: 0.8em;
+	color: red;
+	background-color: white;
+	padding: 0px;
+}
+
+a:link, a:visited {
+	display: block;
+	width: 120px;
+	font-weight: bold;
+	color: white;
+	background-color: #66CC66;
+	text-align: center;
+	padding: 4px;
+	text-decoration: none;
+}
+
+a:hover , a:active {
+background-color: #669966;
+}
