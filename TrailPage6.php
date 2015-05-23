@@ -1,3 +1,6 @@
+<!--Rachael McConnell
+CS290 Spring 2015, How-To Assignment -->
+
 <!DOCTYPE>
 <html>
 <head>
