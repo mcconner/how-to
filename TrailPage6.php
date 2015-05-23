@@ -13,7 +13,7 @@
 	<li><a href="http://web.engr.oregonstate.edu/~mcconner/TrailPage4.php">Searching Using Parameters</a></li>
 	<li><a href="http://web.engr.oregonstate.edu/~mcconner/TrailPage5.php">Using PHP and cURL</a></li>
 	<li><a href="http://web.engr.oregonstate.edu/~mcconner/TrailPage6.php">Putting it All Together</a></li>
-	<li><a href="http://web.engr.oregonstate.edu/~mcconner/TrailPage7.php">That's It!</a></li>
+	<li><a href="http://web.engr.oregonstate.edu/~mcconner/TrailPage7.php">More Information</a></li>
 </ul>
 
 <h1>Trail API: Putting it All Together</h1>
@@ -42,7 +42,8 @@ by using a form. We can create a simple html form with this code:</p>
 </html>
 </xmp>
 
-<p>**The classes simply align the text to the left or right.</p>
+<p>**The classes simply align the text to the left or right.<br>
+**You can change the "action" to the name of the page that you would like the result to post to.</p>
 
 <p>Here is what the form looks like:</p>
 <form method="POST" action="newpage.php">
@@ -58,11 +59,12 @@ by using a form. We can create a simple html form with this code:</p>
 </table>
 </form>
 
-<p>What happens once the user enters data and clicks the submit button? We need to be able to use that data to search the API.
-The following code first initializes a parameters variable. This variable will be passed in as the post_fields in the cURL code from the previous page.
- Next, it checks if a POST request has been made. If so, it checks for each of the form items. If they have been set, then it 
- assigns the value to a variable, replaces any spaces with "+", assigns the key to a variable, and lastly, appends the new 
- parameters to the search string.</p>
+<h3>What happens once the user enters data and clicks the submit button?</h3>
+<p>We need to be able to use that data to search the API. The following PHP code first initializes a variable ($parameters). This variable
+ will be passed in as the POSTFIELDS in the cURL code from the previous page. Next, it checks if a POST request has been made. If so,
+ it checks for each of the form items. If they have been set, then it assigns the value to a variable, replaces any spaces with "+", 
+ assigns the key to a variable, and lastly, appends the new parameters to the search string ($parameters).<br><br>
+ Here is what the PHP code looks like for the first two inputs (Name and City). The same code could be created for the other inputs.</p>
 
 <p class="output">
 $parameters = '';<br>
@@ -91,6 +93,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){<br>
 
 <p>This $parameters variable is passed in to the cURL code on line 4, like this:</p>
 <p class="output">4. curl_setopt($curl, CURLOPT_POSTFIELDS, $parameters);</p>
+
+<p>At this point, you can output all, or some of the results parameters to your user. Look at the previous page for a review on how to do this.</p>
 <br>
 <ul class="hnavbar">
 	<li><a href="http://web.engr.oregonstate.edu/~mcconner/TrailPage5.php">< Back</a></li>

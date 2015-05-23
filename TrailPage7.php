@@ -13,10 +13,10 @@
 	<li><a href="http://web.engr.oregonstate.edu/~mcconner/TrailPage4.php">Searching Using Parameters</a></li>
 	<li><a href="http://web.engr.oregonstate.edu/~mcconner/TrailPage5.php">Using PHP and cURL</a></li>
 	<li><a href="http://web.engr.oregonstate.edu/~mcconner/TrailPage6.php">Putting it All Together</a></li>
-	<li><a href="http://web.engr.oregonstate.edu/~mcconner/TrailPage7.php">That's It!</a></li>
+	<li><a href="http://web.engr.oregonstate.edu/~mcconner/TrailPage7.php">More Information</a></li>
 </ul>
 
-<h1>Trail API: That's It</h1>
+<h1>Trail API: For More Information...</h1>
 <hr>
 <h3>You are Ready!</h3>
 <p>At this point, you should have enough information to use successfully use Trail API. I hope this guide has helped you and that

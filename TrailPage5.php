@@ -13,7 +13,7 @@
 	<li><a href="http://web.engr.oregonstate.edu/~mcconner/TrailPage4.php">Searching Using Parameters</a></li>
 	<li><a href="http://web.engr.oregonstate.edu/~mcconner/TrailPage5.php">Using PHP and cURL</a></li>
 	<li><a href="http://web.engr.oregonstate.edu/~mcconner/TrailPage6.php">Putting it All Together</a></li>
-	<li><a href="http://web.engr.oregonstate.edu/~mcconner/TrailPage7.php">That's It!</a></li>
+	<li><a href="http://web.engr.oregonstate.edu/~mcconner/TrailPage7.php">More Information</a></li>
 </ul>
 
 <div>
@@ -28,9 +28,9 @@ calls to other servers using PHP.</p>
 </div>
 <p class="output">
 1. $curl = curl_init();<br>
-2. curl_setopt($curl, CURLOPT_URL, "https://outdoor-data-api.herokuapp.com/api.json?api_key=apiKey");<br>
+2. curl_setopt($curl, CURLOPT_URL, "https://outdoor-data-api.herokuapp.com/api.json?api_key=APIKey");<br>
 3. curl_setopt($curl, CURLOPT_POST, 1);<br>
-4. curl_setopt($curl, CURLOPT_POSTFIELDS, '***PARAMETERS GO HERE***');<br>
+4. curl_setopt($curl, CURLOPT_POSTFIELDS, <b>'***PARAMETERS GO HERE***'</b>);<br>
 5. curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);<br>
 6. $result = json_decode(curl_exec($curl));<br>
 7. curl_close($curl);<br>
@@ -39,7 +39,7 @@ calls to other servers using PHP.</p>
 <p>I will explain what each line does:
 <ol>
 	<li>Initialize the request</li>
-	<li>Set option: Url to fetch</li>
+	<li>Set option: Url to fetch (make sure you replace APIKey with your API Key, or the variable that you created to store your API key)</li>
 	<li>Set option: POST request</li>
 	<li>Set option: Add parameters</li>
 	<li>Set option: Returns the transfer as a string</li>
@@ -59,14 +59,15 @@ You can set other options as well. See the <a class="test" href="http://php.net/
 
 
 <p>At this point, you can access specific parameters that you are interested in viewing. Here are some examples of how to access parameters:<br>
-<p class="output">$result->places[0]->name;</p>
-<p>This accesses the name of the result. Name is nested under places.</p>
-<p class="output">$result->places[0]->activities[0]->description;</p>
-<p>This accesses the description parameter. As you can see, this parameter is nested under places, then under activities.</p>
-<p class="output">$result->places[0]->city;</p>
-<p>This accesses the city of the result. City is nested under places.</p>
+<p class="output">$result->places[0]->name;<br>
+$result->places[0]->activities[0]->description;<br>
+$result->places[0]->city;</p>
+<p>These calls access the name of the result, the description, and the city, respectively. Name is nested under places. Description is also nested
+ under places, and then under activities. City is nested under places.</p>
 <p>All parameters can be accessed this way. If you are unsure of how to access a specific parameter, view the entire result by using:</p>
 <p class="output">var_dump($result)</p>
+
+<p>Now, let's create a form so that users can easily search for the information they want to see.</p>
 <br>
 
 <ul class="hnavbar">

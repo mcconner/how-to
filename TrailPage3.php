@@ -12,7 +12,7 @@
 	<li><a href="http://web.engr.oregonstate.edu/~mcconner/TrailPage4.php">Searching Using Parameters</a></li>
 	<li><a href="http://web.engr.oregonstate.edu/~mcconner/TrailPage5.php">Using PHP and cURL</a></li>
 	<li><a href="http://web.engr.oregonstate.edu/~mcconner/TrailPage6.php">Putting it All Together</a></li>
-	<li><a href="http://web.engr.oregonstate.edu/~mcconner/TrailPage7.php">That's It!</a></li>
+	<li><a href="http://web.engr.oregonstate.edu/~mcconner/TrailPage7.php">More Information</a></li>
 </ul>
 
 <div>
@@ -21,12 +21,14 @@
 </div>
 
 <h3>URL</h3>
-<p>Each query to the API must contain the same starting URL. The URL is: <b>https://outdoor-data-api.herokuapp.com/api.json?</b><br>
-Next, you must append your api key as an attribute. You can either directly type or paste your API key each time you make a call,
-or you can save your api key in a variable and use the variable instead.
+<p>Each query to the API must contain the same starting URL. The URL is: </p>
+<p class="output">https://outdoor-data-api.herokuapp.com/api.json?</p>
+Next, you must append your api key as an attribute. You can either paste your API key each time you make a call,
+or you can save your API key in a variable and use the variable instead. I recommend saving it in a variable because the API key is 
+long and this will help you to avoid errors. It will look like this: </p>
 
-It will look like this: <b>https://outdoor-data-api.herokuapp.com/api.json?api_key=YOUR_API_KEY_HERE</b>
-</p>
+<p class="output">https://outdoor-data-api.herokuapp.com/api.json?api_key=YOUR_API_KEY_HERE</p>
+<p>You will put your API key variable or actual API key where it says 'YOUR_API_KEY_HERE'.</p>
 <h3>Parameters</h3>
 <p>For most search parameters, you can do a "like" search or an "equal" search.</p>
 
@@ -66,6 +68,8 @@ It will look like this: <b>https://outdoor-data-api.herokuapp.com/api.json?api_k
 	<li>atv</li>
 	<li>water sports</li>
 </ul></p>
+
+<p>Continue to the next page to see how to use these parameters to access data.</p>
 <br>
 
 <ul class="hnavbar">
